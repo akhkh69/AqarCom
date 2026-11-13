@@ -40,7 +40,7 @@
     <string name="create_account">إنشاء حساب جديد</string>
     <string name="register_subtitle">اختر نوع حسابك ثم أكمل بياناتك</string>
     <string name="account_type">نوع الحساب</string>
-    <string name="full_name">الاسم الكامل</string>
+    <string name="full_name">الاسم الثلاثي</string>
     <string name="phone">رقم الهاتف</string>
     <string name="phone_hint">مثال: ‎+963944123456</string>
     <string name="whatsapp">رقم واتساب</string>

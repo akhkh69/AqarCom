@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AqarCom" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/aq_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/aq_blue_50</item>
+        <item name="colorOnPrimaryContainer">@color/aq_blue</item>
+        <item name="colorSecondary">@color/aq_gold</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/aq_gold_50</item>
+        <item name="colorOnSecondaryContainer">@color/aq_ink</item>
+        <item name="colorTertiary">@color/aq_emerald</item>
+        <item name="colorError">@color/aq_red</item>
+        <item name="android:colorBackground">@color/aq_sand</item>
+        <item name="colorSurface">@color/aq_paper</item>
+        <item name="colorOnSurface">@color/aq_ink</item>
+        <item name="colorOnSurfaceVariant">@color/aq_ink_2</item>
+        <item name="colorOutline">@color/aq_line</item>
+        <item name="colorSurfaceContainer">@color/aq_paper</item>
+        <item name="colorSurfaceContainerLow">@color/aq_paper</item>
+        <item name="android:statusBarColor">@color/aq_blue</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/aq_paper</item>
+        <item name="materialButtonStyle">@style/AqButton</item>
+        <item name="textInputStyle">@style/AqTextInput</item>
+        <item name="materialCardViewStyle">@style/AqCard</item>
+        <item name="toolbarStyle">@style/AqToolbar</item>
+    </style>
+
+    <style name="Theme.AqarCom.Splash" parent="Theme.AqarCom">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+
+    <style name="AqToolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/aq_blue</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="subtitleTextColor">@color/aq_blue_50</item>
+        <item name="navigationIconTint">@color/white</item>
+        <item name="titleTextAppearance">@style/TextAppearance.Aq.ToolbarTitle</item>
+    </style>
+
+    <style name="AqButton" parent="Widget.Material3.Button">
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="cornerRadius">@dimen/radius_small</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="AqButton.Gold">
+        <item name="backgroundTint">@color/aq_gold</item>
+    </style>
+    <style name="AqButton.Green">
+        <item name="backgroundTint">@color/aq_emerald</item>
+    </style>
+    <style name="AqButton.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="cornerRadius">@dimen/radius_small</item>
+        <item name="android:textStyle">bold</item>
+        <item name="strokeColor">@color/aq_line</item>
+    </style>
+    <style name="AqButton.Danger" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="cornerRadius">@dimen/radius_small</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/aq_red</item>
+        <item name="strokeColor">@color/aq_red</item>
+    </style>
+    <style name="AqButton.Text" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AqTextInput" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">@dimen/radius_small</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radius_small</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radius_small</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radius_small</item>
+        <item name="boxBackgroundColor">@color/aq_paper</item>
+        <item name="boxStrokeColor">@color/aq_blue</item>
+    </style>
+    <style name="AqTextInput.Dropdown" parent="Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxCornerRadiusTopStart">@dimen/radius_small</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radius_small</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radius_small</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radius_small</item>
+        <item name="boxBackgroundColor">@color/aq_paper</item>
+    </style>
+
+    <style name="AqCard" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">@dimen/radius</item>
+        <item name="cardElevation">1dp</item>
+        <item name="cardBackgroundColor">@color/aq_paper</item>
+        <item name="strokeColor">@color/aq_line</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="TextAppearance.Aq.ToolbarTitle" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+    <style name="TextAppearance.Aq.Headline" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/aq_ink</item>
+    </style>
+    <style name="TextAppearance.Aq.Title" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/aq_ink</item>
+    </style>
+    <style name="TextAppearance.Aq.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/aq_ink_2</item>
+    </style>
+    <style name="TextAppearance.Aq.Caption" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textColor">@color/aq_ink_3</item>
+    </style>
+    <style name="TextAppearance.Aq.Price" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/aq_gold</item>
+    </style>
+    <style name="TextAppearance.Aq.Section" parent="TextAppearance.Material3.TitleSmall">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/aq_ink_2</item>
+    </style>
+
+    <style name="AqChip" parent="Widget.Material3.Chip.Filter">
+        <item name="chipBackgroundColor">@color/chip_bg</item>
+        <item name="android:textColor">@color/chip_text</item>
+        <item name="chipStrokeColor">@color/aq_line</item>
+    </style>
+
+    <style name="AqBottomNav" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemIconTint">@color/nav_item</item>
+        <item name="itemTextColor">@color/nav_item</item>
+        <item name="itemActiveIndicatorStyle">@style/AqNavIndicator</item>
+        <item name="android:background">@color/aq_paper</item>
+    </style>
+    <style name="AqNavIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/aq_gold_50</item>
+    </style>
+
+    <style name="AqBottomSheet" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="colorPrimary">@color/aq_blue</item>
+    </style>
+    <style name="ShapeRounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+    <style name="AqToggleButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="backgroundTint">@color/toggle_bg</item>
+        <item name="android:textColor">@color/toggle_text</item>
+        <item name="strokeColor">@color/aq_blue_50</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

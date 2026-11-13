@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Design Study palette -->
+    <color name="aq_blue">#123A5E</color>
+    <color name="aq_blue_dark">#0D2C48</color>
+    <color name="aq_blue_50">#E8EEF4</color>
+    <color name="aq_gold">#B8873B</color>
+    <color name="aq_gold_50">#F6EDDD</color>
+    <color name="aq_emerald">#2A7D62</color>
+    <color name="aq_emerald_50">#E3F1EC</color>
+    <color name="aq_red">#B4432F</color>
+    <color name="aq_red_50">#F8E6E2</color>
+    <color name="aq_amber">#B7791F</color>
+    <color name="aq_amber_50">#FBF0DC</color>
+    <color name="aq_sand">#F7F3EC</color>
+    <color name="aq_paper">#FFFFFF</color>
+    <color name="aq_ink">#1D2732</color>
+    <color name="aq_ink_2">#4B5866</color>
+    <color name="aq_ink_3">#7B8794</color>
+    <color name="aq_line">#E5DED2</color>
+    <color name="aq_line_2">#EFE9DF</color>
+    <color name="aq_grey_50">#EEF0F2</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="ic_launcher_background">#123A5E</color>
+</resources>

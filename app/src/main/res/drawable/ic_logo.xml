@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- AqarCom mark: gold house with a blue door on a rounded tile -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp" android:height="96dp"
+    android:viewportWidth="96" android:viewportHeight="96">
+    <path android:fillColor="#B8873B" android:pathData="M20,0h56a20,20 0 0 1 20,20v56a20,20 0 0 1 -20,20h-56a20,20 0 0 1 -20,-20v-56a20,20 0 0 1 20,-20z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M48,20L18,46h8v30h44V46h8z" />
+    <path android:fillColor="#123A5E" android:pathData="M42,56h12v20H42z" />
+    <path android:fillColor="#123A5E" android:pathData="M58,50h8v8h-8z" />
+</vector>

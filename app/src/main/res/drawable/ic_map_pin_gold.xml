@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- map marker: colored drop with a white dot (sale = gold, rent = blue, investment = green) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="36dp" android:height="46dp"
+    android:viewportWidth="36" android:viewportHeight="46">
+    <path android:fillColor="#33000000" android:pathData="M18,45.5c-2.5,0 -4.5,-0.6 -4.5,-1.3s2,-1.3 4.5,-1.3 4.5,0.6 4.5,1.3 -2,1.3 -4.5,1.3z" />
+    <path android:fillColor="#B8873B" android:strokeColor="#FFFFFF" android:strokeWidth="2"
+        android:pathData="M18,2C9.7,2 3,8.7 3,17c0,11 15,26 15,26s15,-15 15,-26C33,8.7 26.3,2 18,2z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M18,11a6,6 0 1,0 0.01,0z" />
+</vector>

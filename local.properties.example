@@ -1,0 +1,7 @@
+# Copy this file to local.properties (Android Studio creates it and adds sdk.dir automatically)
+# then add the line you need:
+
+# Backend address. Emulator → 10.0.2.2 is your PC. Real phone → your PC's Wi-Fi IP (ipconfig).
+API_BASE_URL=http://10.0.2.2:3000/api/v1/
+
+# Maps use OpenStreetMap (osmdroid) — no API key is needed.

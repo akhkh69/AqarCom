@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="gutter">16dp</dimen>
+    <dimen name="gap">12dp</dimen>
+    <dimen name="gap_small">8dp</dimen>
+    <dimen name="radius">14dp</dimen>
+    <dimen name="radius_small">10dp</dimen>
+    <dimen name="card_image_height">170dp</dimen>
+    <dimen name="detail_image_height">260dp</dimen>
+    <dimen name="button_height">52dp</dimen>
+</resources>

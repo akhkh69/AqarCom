@@ -1,0 +1,69 @@
+plugins {
+    id 'com.android.application'
+}
+
+// Read optional settings from local.properties (never committed):
+//   API_BASE_URL=http://192.168.1.10:3000/api/v1/
+def localProps = new java.util.Properties()
+def lp = rootProject.file('local.properties')
+if (lp.exists()) lp.withInputStream { localProps.load(it) }
+def apiBase = localProps.getProperty('API_BASE_URL', 'http://10.0.2.2:3000/api/v1/')
+
+android {
+    namespace 'com.aqarcom.app'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'com.aqarcom.app'
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName '1.0'
+        buildConfigField 'String', 'API_BASE_URL', "\"${apiBase}\""
+        resourceConfigurations += ['ar', 'en']
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+        buildConfig true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'androidx.viewpager2:viewpager2:1.1.0'
+    implementation 'androidx.activity:activity:1.9.2'
+    implementation 'androidx.fragment:fragment:1.8.4'
+    implementation 'androidx.exifinterface:exifinterface:1.3.7'
+
+    // Networking (same stack as the backend client layer)
+    implementation 'com.squareup.retrofit2:retrofit:2.11.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.11.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.12.0'
+    implementation 'com.google.code.gson:gson:2.11.0'
+
+    // Images
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+
+    // Maps (FR-07): OpenStreetMap through osmdroid — free, no API key, full coverage of Syria
+    implementation 'org.osmdroid:osmdroid-android:6.1.20'
+    // "My location" (fused provider)
+    implementation 'com.google.android.gms:play-services-location:21.3.0'
+}

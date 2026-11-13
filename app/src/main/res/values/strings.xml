@@ -64,7 +64,7 @@
     <string name="change_password">تغيير كلمة المرور</string>
     <string name="current_password">كلمة المرور الحالية</string>
     <string name="resend_code">إعادة إرسال الرمز</string>
-    <string name="pending_title">حسابك بانتظار موافقة الإدارة</string>
+    <string name="pending_title">حسابك بانتظار موافقة الادارة</string>
     <string name="pending_message">استلمت إدارة منصة عقاركم طلبك وهو قيد المراجعة. ستصلك رسالة فور تفعيل الحساب، وبعدها تتمكن من استخدام جميع الصلاحيات.</string>
     <string name="pending_contractor_hint">لتسريع التفعيل ارفع شهادة نقابة المهندسين أو السجل التجاري الآن.</string>
     <string name="check_status">تحقّق من حالة الحساب</string>
